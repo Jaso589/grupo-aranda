@@ -28,6 +28,7 @@
     border: none;
     background: none;
     font-size: 1rem;
+    color: inherit;
     margin: 10px 0;
 }
 .btn_menu{
