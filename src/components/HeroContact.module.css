@@ -1,0 +1,32 @@
+.hero{
+    height: 250px;
+    background: var(--yellow);
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+.hero_content h2{
+    font-size: 36px;
+    color: var(--white);
+}
+.hero_content button{
+    background: var(--white);
+    border: none;
+    padding: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media (min-width:900px){
+    .hero_content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero_content button{
+        margin: 0;
+    }
+}

@@ -1,0 +1,25 @@
+.bg_page{
+    background-image: url('/img/bg_pages.jpg');
+    background-size: cover;
+    background-position: 50%;
+    color: var(--white);
+    height: 200px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 200px;
+}
+.content h1{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 36px;
+}
+.content p{
+    text-transform: capitalize;
+}
+.content p span{
+    color: var(--yellow);
+}

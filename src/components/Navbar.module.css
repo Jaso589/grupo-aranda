@@ -1,0 +1,110 @@
+.header{
+    height: 90px;
+    position: absolute;
+    width: 100vw;
+    z-index: 999;
+    /* border-bottom: 1px solid #FFF8;
+    background: rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(10px); */
+    color: var(--white);
+}
+.header_page{
+    height: 90px;
+    position: absolute;
+    color: var(--black);
+    width: 100vw;
+    z-index: 999;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90vw;
+    margin: auto;
+    position: relative;
+}
+.container button{
+    border: none;
+    background: none;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.btn_menu{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn_menu .btn_burguer span{
+    display: flex;
+    /* flex-direction: column; */
+    background: var(--blue);
+    height: 3px;
+    width: 20px;
+    margin: 2px 0;
+}
+.btn_menu .btn_close{
+    display: flex;
+    flex-direction: column;
+}
+.btn_menu .btn_close span{
+    background: var(--blue);
+    height: 3px;
+    width: 20px;
+    margin: 2px 0;
+}
+.btn_menu .btn_close span:nth-child(1){
+    transform: rotate(45deg);
+    background: var(--blue);
+    position: relative;
+    top: 5px;
+}
+.btn_menu .btn_close span:nth-child(2){
+    position: relative;
+    top: -2px;
+    transform: rotate(-45deg);
+    background: var(--blue);
+}
+.navbar{
+    position: fixed;
+    top: 90px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 40vh;
+    background: #fafafa;
+    color: black;
+}
+.navbar a{
+    margin: 10px 0;
+}
+.navbar_hide{
+    display: none;
+}
+
+@media (min-width:900px){
+    .container{
+        justify-content: space-between;
+    }
+
+    .navbar_hide{
+        display: flex;
+        font-weight: 600;
+        /* color: white; */
+    }
+    .navbar_hide a{
+        margin-left: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .btn_menu{
+        display: none;
+    }
+}
